@@ -1,8 +1,6 @@
 import { useAuthentication } from '../../hooks/useAuthentication'
-
 import { useState, useEffect } from 'react'
-
-import styles from './Login.module.css'
+import styles from './Login.module.css' 
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -21,8 +19,8 @@ const Login = () => {
 
     const res = await login(user)
 
-    console.log(user)
-  } 
+    console.log(res)
+  }
 
   useEffect(() => {
     if (authError) {
